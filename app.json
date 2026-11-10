@@ -1,17 +1,22 @@
+
 {
   "expo": {
-    "name": "HabbitFlow",
-    "slug": "HabbitFlow",
+    "name": "HabitFlow",
+    "slug": "habitflow",
+    "scheme": "habitflow",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "backgroundColor": "#F2FCF2",
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.habitflow.app",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#F2FCF2",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,7 +24,13 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "@react-native-google-signin/google-signin"
+    ]
   }
 }
