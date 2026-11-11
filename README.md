@@ -167,3 +167,5 @@ When transitioning to Milestone 1 (Backend & API connectivity), replace the mock
 5. **Reminders & Push Notifications (`app/profile/reminders.tsx`)**:
    - Integrate `expo-notifications` to schedule local daily notifications with acoustic sound assets.
 
+#   H a b i t F l o w  
+ 
